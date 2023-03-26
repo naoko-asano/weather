@@ -4,10 +4,14 @@ export const CITIES = [
   {
     code: "13",
     name: "東京",
+    latitude: "35.689",
+    longitude: "139.692",
   },
   {
     code: "14",
     name: "神奈川",
+    latitude: "35.448",
+    longitude: "139.642",
   },
 ] as const;
 

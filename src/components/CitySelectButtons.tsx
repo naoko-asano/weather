@@ -1,12 +1,12 @@
+import { Fragment } from "react";
 import { CITIES } from "@/entities/city";
-import { Fragment, useEffect, useState } from "react";
 
 interface Props {
-  // checkedCityCode: string;
+  checkedCityCode: string;
   onChange: (cityCode: string) => void;
 }
 
-export const CitySelectButtons = ({ onChange }: Props) => {
+export const CitySelectButtons = ({ checkedCityCode, onChange }: Props) => {
   return (
     <>
       {CITIES.map((city) => (
@@ -15,8 +15,9 @@ export const CitySelectButtons = ({ onChange }: Props) => {
             type="radio"
             name="city"
             value={city.code}
-            onChange={(e) => {
-              onChange(e.target.value);
+            checked={city.code === checkedCityCode}
+            onChange={(event) => {
+              onChange(event.target.value);
             }}
           />
           <label>{city.name}</label>

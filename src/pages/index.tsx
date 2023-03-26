@@ -1,12 +1,12 @@
 import { CitySelectButtons } from "@/components/CitySelectButtons";
 import { Weather } from "@/components/Weather";
-import { useState } from "react";
+import { useCity } from "@/hooks/useCity";
 
 export default function Home() {
-  const [cityCode, setCityCode] = useState("13");
+  const { cityCode, setCityCode } = useCity("13");
   return (
     <>
-      <CitySelectButtons onChange={setCityCode} />
+      <CitySelectButtons checkedCityCode={cityCode} onChange={setCityCode} />
       <Weather cityCode={cityCode} />
     </>
   );
