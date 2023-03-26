@@ -1,5 +1,3 @@
-import { City } from "@/types/city";
-
 export const CITIES = [
   {
     code: "13",

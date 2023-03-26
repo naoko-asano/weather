@@ -1,8 +1,6 @@
-import axios from "axios";
 import { findCity } from "@/entities/city";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useWeather } from "@/hooks/useWeather";
-import { Weather as WeatherType } from "@/types/weather";
 
 interface Props {
   cityCode: string;
