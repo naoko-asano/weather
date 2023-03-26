@@ -1,5 +1,6 @@
-import { findCity } from "@/entities/city";
 import { useEffect } from "react";
+
+import { findCity } from "@/entities/city";
 import { useWeather } from "@/hooks/useWeather";
 
 interface Props {

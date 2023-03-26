@@ -1,9 +1,10 @@
-import { useState } from "react";
 import axios from "axios";
+import { useState } from "react";
+
 import { createApiUrl } from "@/entities/api";
-import { Weather } from "@/types/weather";
 import { initialWeather } from "@/entities/weather";
 import { City } from "@/types/city";
+import { Weather } from "@/types/weather";
 
 export const useWeather = () => {
   const [weather, setWeather] = useState<Weather>(initialWeather);
