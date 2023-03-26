@@ -1,6 +1,6 @@
 const API_BASE_URL = "https://api.open-meteo.com/v1/forecast";
 export const createParams = (latitude: string, longitude: string) => {
-  return `?latitude=${latitude}&longitude=${longitude}&current_weather=true`;
+  return `?latitude=${latitude}&longitude=${longitude}&current_weather=true&timezone=Asia/Tokyo`;
 };
 
 export const createApiUrl = (latitude: string, longitude: string) =>

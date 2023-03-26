@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 
 import { findCity } from "@/entities/cities";
+import { convertTimeForDisplay } from "@/entities/time";
 import { useWeather } from "@/hooks/useWeather";
 
 interface Props {
@@ -20,7 +21,7 @@ export const Weather = ({ cityCode }: Props) => {
   return (
     <>
       <p>都市: {cityName}</p>
-      <p>時間: {weather.time}</p>
+      <p>時間: {convertTimeForDisplay(weather.time)}</p>
       <p>気温: {weather.temperature}</p>
       <p>天気コード: {weather.weatherCode}</p>
     </>
