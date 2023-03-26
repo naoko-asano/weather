@@ -1,5 +1,5 @@
-import { CitySelectButtons } from "@/components/CitySelectButtons";
-import { Weather } from "@/components/Weather";
+import { CitySelectButtons } from "@/components/citySelectButtons";
+import { Weather } from "@/components/weather";
 import { useCity } from "@/hooks/useCity";
 
 export default function Home() {

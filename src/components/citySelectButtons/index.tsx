@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 
-import { CITIES } from "@/entities/city";
+import { CITIES } from "@/entities/cities";
 
 interface Props {
   checkedCityCode: string;
